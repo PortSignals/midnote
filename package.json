@@ -3,6 +3,7 @@
   "version": "0.6.6",
   "description": "SvelteKit component: inline footnotes with expandability.",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "test": "vitest run",
     "test:ui": "vitest --ui",
@@ -19,7 +20,7 @@
     "inline",
     "note"
   ],
-  "author": "Lilith",
+  "author": "Lilith@justlilith.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PortSignals/midnote/issues"
