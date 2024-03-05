@@ -1,7 +1,10 @@
 <script lang="js">
-    export let TestComponent;
+    let TestComponent;
+    export let slots = [];
 </script>
 
 <svelte:component this={TestComponent}>
-    <h1>oh neat!</h1>
+    {#each slots as testSlot}
+        <slot />
+    {/each}
 </svelte:component>

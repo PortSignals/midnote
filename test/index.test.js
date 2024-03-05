@@ -1,10 +1,11 @@
-import { render } from "@testing-library/svelte";
-import midnote from '../src/components/midnote.svelte'
-import { expect, test } from 'vitest'
-import TestComponent from './lib/testComponent.svelte'
+import { renderTest } from "./render.test.js";
+import { slotsTests } from "./slots.test.js";
 
-test('should render', () => {
-    const results = render(midnote, { props: {} })
+const tests = [
+    renderTest,
+    slotsTests
+]
 
-    expect(results).is;
+tests.map((testCase) => {
+    testCase()
 })
