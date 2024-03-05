@@ -6,7 +6,7 @@ type MidnoteLibraryComponent = {
         slots: [
             {
                 slotName: string,
-                slotContent: SvelteComponent
+                slotContent: SvelteComponent | string
             }
         ]
     }
